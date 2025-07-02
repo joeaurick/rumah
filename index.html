@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RUMA - Portal Properti</title>
+  <link rel="canonical" href="https://rumah.vercel.app/" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RUMA",
+    "url": "https://rumah.vercel.app/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://rumah.vercel.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RUMA",
+    "url": "https://rumah.vercel.app/",
+    "logo": "https://rumah.vercel.app/logo.png",
+    "sameAs": [
+      "https://facebook.com/ruma",
+      "https://instagram.com/ruma.id"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "RUMA",
+    "url": "https://rumah.vercel.app/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jakarta",
+      "addressCountry": "ID"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">🏠 RUMA</div>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Temukan Rumah Impian Anda</h1>
+      <p>Jelajahi berbagai properti dari seluruh Indonesia.</p>
+      <div class="search-tabs">
+        <button class="tab active">Dijual</button>
+        <button class="tab">Disewa</button>
+        <button class="tab">Properti Baru</button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Lokasi, keyword, area, project, developer" />
+        <button onclick="cariProperti()">Cari</button>
+      </div>
+    </section>
+
+    <section class="listings" id="listings">
+      <div class="property" data-price="850000000" data-lokasi="bandung">
+        <img src="https://source.unsplash.com/400x250/?house" alt="Rumah Modern di Bandung" />
+        <h2>Rumah Modern di Bandung</h2>
+        <p>Bandung</p>
+        <p class="price">Rp 850.000.000</p>
+      </div>
+      <div class="property" data-price="1200000000" data-lokasi="jakarta">
+        <img src="https://source.unsplash.com/400x250/?apartment" alt="Apartemen di Jakarta Selatan" />
+        <h2>Apartemen di Jakarta Selatan</h2>
+        <p>Jakarta</p>
+        <p class="price">Rp 1.200.000.000</p>
+      </div>
+      <div class="property" data-price="2500000000" data-lokasi="bali">
+        <img src="https://source.unsplash.com/400x250/?villa" alt="Villa Nyaman di Bali" />
+        <h2>Villa Nyaman di Bali</h2>
+        <p>Bali</p>
+        <p class="price">Rp 2.500.000.000</p>
+      </div>
+      <div class="property" data-price="950000000" data-lokasi="bekasi">
+        <img src="https://source.unsplash.com/400x250/?home" alt="Cluster Baru di Bekasi" />
+        <h2>Cluster Baru di Bekasi</h2>
+        <p>Bekasi</p>
+        <p class="price">Rp 950.000.000</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RUMA. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
