@@ -1,21 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RUMA - Portal Properti</title>
-  <link rel="canonical" href="https://rumah.vercel.app/" />
+  <title>Jual Rumah, Beli Rumah, Sewa Properti & Apartemen di Jakarta & Bekasi | RUMA</title>
+  <meta name="description" content="Jual beli rumah dan properti di Jakarta & Bekasi. Temukan rumah dijual, sewa apartemen, dan listing properti terbaru hanya di RUMA." />
+  <link rel="canonical" href="https://rumah-psi.vercel.app/" />
+
+  <!-- Open Graph Meta (Facebook) -->
+  <meta property="og:title" content="Jual Beli Rumah & Properti Jakarta Bekasi | RUMA" />
+  <meta property="og:description" content="Cari rumah dijual di Jakarta & Bekasi. Platform properti terpercaya untuk hunian Anda." />
+  <meta property="og:image" content="https://rumah-psi.vercel.app/og-image.jpg" />
+  <meta property="og:url" content="https://rumah-psi.vercel.app/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jual Rumah, Sewa Properti Jakarta Bekasi | RUMA" />
+  <meta name="twitter:description" content="Temukan rumah dan properti terbaik untuk dibeli atau disewa di Jakarta & Bekasi." />
+  <meta name="twitter:image" content="https://rumah-psi.vercel.app/og-image.jpg" />
+
+  <!-- Styles & Preload -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="https://source.unsplash.com/400x250/?house" />
+  <link rel="preload" as="image" href="https://source.unsplash.com/400x250/?apartment" />
+  <link rel="preload" as="image" href="https://source.unsplash.com/400x250/?villa" />
+  <link rel="preload" as="image" href="https://source.unsplash.com/400x250/?home" />
+
+  <!-- Icons & Manifest -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0a2540" />
+
+  <!-- Schema.org JSON-LD Snippets -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "RUMA",
-    "url": "https://rumah.vercel.app/",
+    "url": "https://rumah-psi.vercel.app/",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://rumah.vercel.app/?q={search_term_string}",
+      "target": "https://rumah-psi.vercel.app/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
@@ -25,8 +51,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "RUMA",
-    "url": "https://rumah.vercel.app/",
-    "logo": "https://rumah.vercel.app/logo.png",
+    "url": "https://rumah-psi.vercel.app/",
+    "logo": "https://rumah-psi.vercel.app/logo.png",
     "sameAs": [
       "https://facebook.com/ruma",
       "https://instagram.com/ruma.id"
@@ -38,12 +64,31 @@
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "name": "RUMA",
-    "url": "https://rumah.vercel.app/",
+    "url": "https://rumah-psi.vercel.app/",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Jakarta",
       "addressCountry": "ID"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Beranda",
+        "item": "https://rumah-psi.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Properti"
+      }
+    ]
   }
   </script>
 </head>
@@ -73,6 +118,7 @@
     </section>
 
     <section class="listings" id="listings">
+      <!-- Properti Dummy -->
       <div class="property" data-price="850000000" data-lokasi="bandung">
         <img src="https://source.unsplash.com/400x250/?house" alt="Rumah Modern di Bandung" />
         <h2>Rumah Modern di Bandung</h2>
